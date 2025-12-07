@@ -1,0 +1,13 @@
+opcode,B,C,D
+# Pointer to data base
+LOAD_CONST,3000,30,
+# Data values
+LOAD_CONST,1,3000,
+LOAD_CONST,123,3001,
+LOAD_CONST,1024,3002,
+LOAD_CONST,65535,3003,
+# Store NOT results into verification area starting at 3200
+NOT_MEM,30,0,3200
+NOT_MEM,30,1,3201
+NOT_MEM,30,2,3202
+NOT_MEM,30,3,3203
